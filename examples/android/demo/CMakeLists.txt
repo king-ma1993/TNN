@@ -26,7 +26,7 @@ include_directories(${CMAKE_SOURCE_DIR}/src/main/jni/thirdparty/hiai_ddk/include
 
 set(CMAKE_BUILD_TYPE Release)
 
-set(TNN_OPENCL_ENABLE ON CACHE BOOL "" FORCE)
+set(TNN_OPENCL_ENABLE OFF CACHE BOOL "" FORCE)
 set(TNN_ARM_ENABLE ON CACHE BOOL "" FORCE)
 if(ANDROID_ABI STREQUAL "arm64-v8a")
     set(TNN_ARM82_ENABLE ON CACHE BOOL "" FORCE)
