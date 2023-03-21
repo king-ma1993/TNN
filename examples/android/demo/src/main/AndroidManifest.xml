@@ -72,6 +72,11 @@
             android:windowSoftInputMode="stateAlwaysHidden"
             android:screenOrientation="portrait"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.tencent.tnn.demo.bodybackground.BodyBgDetectActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
         <activity android:name="com.tencent.tnn.demo.ImageFaceDetector.ImageFaceDetectActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden"

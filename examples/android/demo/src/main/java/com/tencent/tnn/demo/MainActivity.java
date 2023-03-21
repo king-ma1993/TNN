@@ -26,6 +26,7 @@ import com.tencent.tnn.demo.StreamPoseDetectLandmark.StreamPoseDetectLandmarkAct
 import com.tencent.tnn.demo.StreamSkeletonDetector.StreamSkeletonDetectActivity;
 import com.tencent.tnn.demo.StreamOCRDetector.StreamOCRDetectActivity;
 import com.tencent.tnn.demo.ImageClassifyOpenGLDetector.ImageClassifyOpenGLDetectActivity;
+import com.tencent.tnn.demo.bodybackground.BodyBgDetectActivity;
 
 
 public class MainActivity extends Activity {
@@ -46,6 +47,18 @@ public class MainActivity extends Activity {
     }
 
     private void init() {
+        findViewById(R.id.body_detect_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!isShowedActivity) {
+                    isShowedActivity = true;
+                    Intent intent = new Intent();
+                    Activity activity = MainActivity.this;
+                    intent.setClass(activity, BodyBgDetectActivity.class);
+                    activity.startActivity(intent);
+                }
+            }
+        });
         findViewById(R.id.stream_detect_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

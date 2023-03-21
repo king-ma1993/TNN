@@ -24,6 +24,18 @@
             android:textSize="20sp" />
 
         <TextView
+            android:id="@+id/body_detect_btn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="49dp"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="@string/tnn_body_btn_name"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
             android:id="@+id/stream_detect_btn"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
